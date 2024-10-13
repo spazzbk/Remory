@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Remory</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form class="form" name="loginForm">
+        <div class="form-content">
+            <span class="title">Вход</span>
+            <div class="form-groups">
+                <div class="form-group">
+                    <label class="form-group__title" for="login">Имя</label>
+                    <input
+                        class="form-control"
+                        id="login"
+                        type="text"
+                        placeholder="Введите имя"
+                        data-required="login">
+                </div>
+                <div class="form-group">
+                    <label class="form-group__title" for="password">Пароль</label>
+                    <input
+                        class="form-control"
+                        id="password"
+                        type="password"
+                        placeholder="Введите пароль"
+                        data-required="login">
+                </div>
+            </div>
+            <button class="btn" type="submit">Войти</button>
+        </div>
+    </form>
+</body>
+</html>

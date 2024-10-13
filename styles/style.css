@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Inter, sans-serif, "Roboto Light", Calibri;
+}
+
+/* form */
+
+.form {
+    height: 100vh;
+    align-content: center;
+
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+}
+
+.title {
+    display: block;
+    width: 9.2rem;
+    margin-top: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 3.6rem;
+}
+
+.form-groups {
+    margin-top: 10rem;
+    margin-left: 3.8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 3rem;
+}
+
+.form-group__title {
+    margin-bottom: 1.5rem;
+
+    font-size: 2.4rem;
+}
+
+.form-control {
+    margin-left: 0.6rem;
+    width: 31.4rem;
+    padding: 1rem 0 1rem 1.6rem;
+
+    font-size: 1.6rem;
+
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.btn {
+    margin: auto auto 7.2rem;
+    padding: 1.6rem 0;
+    width: 12.4rem;
+
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+
+    border-radius: 15px;
+    background-color: #48B9FF;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+    }
+
+    .form-content {
+        height: 100%;
+        width: 32rem;
+        border: none;
+        border-radius: 0;
+    }
+
+    .title {
+        margin-top:40%;
+    }
+
+    .form-groups {
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 100%;
+        margin: auto 0 7.2rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        margin-top: 10%;
+    }
+}
