@@ -1,12 +1,10 @@
-import UI from 'config/ui.config';
-import { validate } from '/helpers/validate'
+import UI from './config/ui.config.js';
+import { validate } from './helpers/validate.js'
 
 const { form, inputLogin, inputPassword} = UI;
 const inputs = [inputLogin, inputPassword]
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(1);
     onSubmit();
 });
 
